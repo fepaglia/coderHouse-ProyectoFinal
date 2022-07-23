@@ -40,7 +40,7 @@ body{
                 }
 
     .frontpage{
-        background-image: url(../images/fondomenu.jpg);
+        background-image: url(../images/index/fondomenu.jpg);
         object-fit: cover;
         height: 90vh;
         display: flex;
@@ -97,9 +97,10 @@ body{
         }
 
     .comments{
-        background-image: url(../images/prueba.jpg);
         min-height: 70vh;
+        max-height: 70%;
         padding: 3em;
+
         display: grid;
         gap: .8em;
         grid-auto-columns: 1fr;
@@ -109,9 +110,9 @@ body{
         }
         .review {
             background-color: gray;
-            border-radius: 10px;
             height: 100%;
             width:100%;
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -121,31 +122,31 @@ body{
 
         .rev1 {
             grid-area: one;
+            background-color: #EF8354;
         }
         .rev2 {
             grid-area: two;
+            background-color: #FF9479;
         }
         .rev3 {
             grid-area: three;
+            background-color: #B78570;
         }
         .rev4 {
             grid-area: four;
+            background-color:  #DC6976;
         }
         .rev5 {
             grid-area: five;
+            background-color: #B45794;
         }
 
             .reviewimg {
-                width: 30%;
-                height: 30%;
-                margin: .5em .2em;
-                border-radius: 10%;
+                border-radius: 50%;
+                margin: .3em .2em;
                 object-fit: cover;
             }
-            .reviewp {
-                color: black;
-                font-size: 18px;
-            }
+
 
     .footer {
         height: 30vh;
@@ -224,7 +225,7 @@ body{
         display: flex;
         place-content: center;
     }
-      .ptheplace {
+      .ptheplace, .preview {
         font-size: 30px;
         padding: 1em;
         margin: auto;
@@ -356,7 +357,7 @@ input, select {
         width:100px;
     }
 
-    .ptheplace {
+    .ptheplace, .preview {
         font-size: 25px;
     }
 
@@ -416,7 +417,7 @@ input, select {
         width: 100%;
     
     }
-        .review {
+        .review, .preview {
             flex-direction: column;
             padding: .4em;
         }
