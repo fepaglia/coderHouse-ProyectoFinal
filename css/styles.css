@@ -1,0 +1,451 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'IM Fell English SC', serif;
+}
+/* ##### index ####*/
+    header, footer {
+        min-height: 10vh;
+        width: 100%;
+        padding: 10px;
+        background-color: #EF8354;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;  
+    }
+        ul {
+            list-style-type: none;
+            display: flex;
+        }
+            li{
+                padding-right: 20px ;
+            }
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 30px;
+                }
+                .title {
+                    font-size: 45px;
+                    font-weight: bold;
+                }
+/* ANIMACION*/  a:hover {
+                    text-decoration: underline;
+                    text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0,0,0,0.15);
+                }
+
+    .frontpage{
+        background-image: url(../images/fondomenu.jpg);
+        object-fit: cover;
+        height: 90vh;
+        display: flex;
+    }
+        .frontpagediv {
+            text-align: center;
+            font-size: 2rem;
+            color: whitesmoke;
+            margin: auto;
+        }
+            h1 {
+                font-size: 4em;
+            }
+            .logotripadvisor {
+                margin-top: 0.5em;
+                width: auto;
+                max-width: 300px;       
+            }
+    main {
+        background-color: brown;
+    }
+    article{
+        background-color: #FFECE8;
+    }
+
+    .gallery {
+        padding: 3em;
+        height: 100vh;
+
+        display: grid;
+        place-content: center;
+        object-fit: cover;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-rows: 20rem;
+        gap: .8em;
+        grid-template-areas:
+        "uno cinco tres seis"
+        "uno dos cuatro seis";
+    }
+        .img1 {
+            grid-area: uno;
+        }
+        .img2 {
+            grid-area: dos;
+        }
+        .img6 {
+            grid-area: seis;
+        }
+
+        .img-gal {    
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    .comments{
+        background-image: url(../images/prueba.jpg);
+        min-height: 70vh;
+        padding: 3em;
+        display: grid;
+        gap: .8em;
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+        "one one two five"
+        "three four four five";
+        }
+        .review {
+            background-color: gray;
+            border-radius: 10px;
+            height: 100%;
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: auto;
+        }
+
+        .rev1 {
+            grid-area: one;
+        }
+        .rev2 {
+            grid-area: two;
+        }
+        .rev3 {
+            grid-area: three;
+        }
+        .rev4 {
+            grid-area: four;
+        }
+        .rev5 {
+            grid-area: five;
+        }
+
+            .reviewimg {
+                width: 30%;
+                height: 30%;
+                margin: .5em .2em;
+                border-radius: 10%;
+                object-fit: cover;
+            }
+            .reviewp {
+                color: black;
+                font-size: 18px;
+            }
+
+    .footer {
+        height: 30vh;
+    }
+        .footer__agencies, .footer__info-contact, .footer__sociallogos {
+            border: 1px solid black;
+            padding: 0.4em;
+            place-content: center;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+        .subtitle {
+            padding-top: .5em;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+/* ### the place ###*/
+    .the-place-wineroom-grid { 
+        padding: 1.5em; 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-auto-rows: 1fr;
+        gap: 0.8em;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "cava2 cava2 text1 text1"
+          "cava2 cava2 text2 text2"
+          "corcho cava1 . .";
+      }
+      
+      .corcho { grid-area: corcho; }
+      
+      .cava1 { grid-area: cava1; }
+      
+      .cava2 { grid-area: cava2; }
+      
+      .text1 { grid-area: text1; }
+      
+      .text3 { grid-area: text3; }
+      
+      .text2 { grid-area: text2; }
+    
+      .the-place-grid2 {
+        padding: 1.5em;  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-auto-rows: 1fr;
+        gap: 0.8em;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "t1 t1 pic1 pic1"
+          "t2 t2 pic1 pic1"
+          ". . pic2 pic3";
+      }
+      
+      .t1 { grid-area: t1; }
+      
+      .t2 { grid-area: t2; }
+      
+      .pic3 { grid-area: pic3; }
+      
+      .pic2 { grid-area: pic2; }
+      
+      .pic1 { grid-area: pic1; }
+      
+      .box {
+        background-color: aliceblue;
+      }
+
+    .box {
+        display: flex;
+        place-content: center;
+    }
+      .ptheplace {
+        font-size: 30px;
+        padding: 1em;
+        margin: auto;
+      }
+
+/*#### menu.html ####*/
+
+        /*box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
+        padding: 5px;
+        margin: 1em;*/
+
+/*##### aboutus.html #####*/
+
+    .aboutus {
+        min-height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        ". title ."
+        "box1 box1 box1"
+        "box2 . box3";
+    }
+        .gridtitle {
+            grid-area: title;
+        }
+        .box1 {
+            grid-area: box1;
+        }
+        .box2 {
+            grid-area: box2;
+        }
+        .box3 {
+            grid-area: box3 ;
+        }
+
+        .img-aboutus {
+            box-shadow: .35em .35em .48em;
+            border-radius: 5px;
+            margin-right:1em;
+            width: 600px;
+        }
+        .img-chef{
+            width: 30%;
+            height: 25%;
+            object-fit: cover;      
+        }
+
+/*### contact ###*/
+.container {
+    background-color: grey;
+    place-content: center;
+    height:90vh;
+}
+.formulariobox{ 
+    display:flex;
+    flex-direction: column;
+    opacity: 0.9;
+}
+.formulario {
+    display:inherit;
+    flex-direction: inherit;
+    align-items: flex-start;
+    padding-top: 1em;
+    opacity: 1;
+}
+
+label {
+    padding: 0.5em 1em;
+}
+
+input, select {
+    border-radius: 4px;
+    font-size: large;
+    padding: 5px;
+}
+
+/*##### Media Queries ########*/
+@media (max-width: 660px){
+    header, footer, .box{
+        flex-direction: column;
+    }
+    
+    nav {
+        padding: 10px 0;
+    }
+        li {
+            padding: 0 10px;
+        }
+    section {
+        height: auto;
+        padding-bottom: 1em;
+    }
+
+    .frontpagediv {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 75px;
+    }
+
+    .gallery {
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "uno uno"
+        "uno uno"
+        "dos tres"
+        "cuatro cinco"
+        "seis seis"
+        "seis seis"; 
+    }
+
+    .comments {
+        grid-template-areas:
+        "one one"
+        "two three"
+        "five five"
+        "four four";
+    }
+
+    .box {
+        margin: 0.5em;
+    }
+    .description{
+        overflow: hidden;
+    }
+    .img-theplace{
+        width:100px;
+    }
+
+    .ptheplace {
+        font-size: 25px;
+    }
+
+    .imgbox{
+        flex-direction: column;
+    }
+    .img-menu {
+        width: 40%;
+        height: 25%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 500px){
+    header, footer, .box{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        padding: 10px 0;
+    }
+        ul {
+            flex-direction: column;
+            padding: 0;
+        }
+        h1 {
+            font-size: 75px;
+        }
+        h2 {
+            font-size: 23px;
+        }
+
+    .gallery {
+        padding:.5em;
+        grid-auto-rows: 20rem;
+        grid-template-columns: 100%;
+        gap: .4em;
+        grid-template-areas:
+        "uno"
+        "dos" 
+        "tres"
+        "cuatro"
+        "cinco"
+        "seis";
+        overflow: scroll;
+    }
+
+    .comments {
+        padding:.5em;
+        grid-auto-columns: 100%;
+        grid-template-areas:
+        'one'
+        'two'
+        'three'
+        'four'
+        'five';
+        width: 100%;
+    
+    }
+        .review {
+            flex-direction: column;
+            padding: .4em;
+        }
+        /*MAIN THE PLACE*/
+    .the-place-wineroom-grid{
+        grid-template-columns: 1fr;
+        gap: .4em;
+        grid-template-areas:
+        "cava2"
+        "text1"
+        "cava1"
+        "text2"
+        "corcho";
+        }
+
+        .ptheplace {
+            font-size: 20px;
+        }
+
+    .the-place-grid2 {
+        height: auto;
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr;
+        gap: 0.4em;
+        grid-template-areas:
+        "pic1"
+        "t1"
+        "pic2"
+        "t2" 
+        "pic3";
+    }
+}
