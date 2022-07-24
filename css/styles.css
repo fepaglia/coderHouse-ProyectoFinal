@@ -86,6 +86,15 @@ body{
         .img2 {
             grid-area: dos;
         }
+        .img8 {
+            grid-area: tres;
+        }
+        .img12 {
+            grid-area: cuatro;
+        }
+        .img7 {
+            grid-area: cinco;
+        }
         .img6 {
             grid-area: seis;
         }
@@ -148,17 +157,29 @@ body{
             }
 
 
-    .footer {
-        height: 30vh;
+    footer {
+        min-height: 30vh;
     }
         .footer__agencies, .footer__info-contact, .footer__sociallogos {
-            border: 1px solid black;
-            padding: 0.4em;
-            place-content: center;
+            padding:0.4em;
+            text-align: center;
         }
+        .footer__sociallogos , .footer__agencies {
+            padding: .5em
+        }
+        .link-footer {
+            margin: 0.3em;
+        }
+
         .logo {
             width: 50px;
             height: 50px;
+            margin: .5em;
+        }
+
+        .logo:hover{
+            text-decoration: underline;
+            text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0,0,0,0.15);
         }
         .subtitle {
             padding-top: .5em;
@@ -345,6 +366,10 @@ input, select {
         "two three"
         "five five"
         "four four";
+    }
+
+    .footer__agencies, .footer__info-contact, .footer__sociallogos {
+        border: 1px solid black;
     }
 
     .box {
