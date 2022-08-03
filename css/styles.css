@@ -39,7 +39,7 @@ body{
         background-color: #EF8354;
     }
         .navbar-toggler {
-            background-color: #FF9479;
+            background-color: #d17c36;
         }
             .navbar-toggler-icon {
                 background: #d17c36;
@@ -50,10 +50,10 @@ body{
                 font-size: 30px;
             }
 
-
-/* ANIMACION*/  a.nav-link:hover , .navbar-brand:hover {
-                    text-decoration: underline;
-                    text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0,0,0,0.15);
+/* ANIMACION*/  a.nav-link:hover {
+                    text-decoration: underline6;
+                    color: black;
+                    text-shadow: 2px 2px 0px #d17c3, 5px 4px 0px rgba(0,0,0,0.15);
                 }
 
     .frontpage{
