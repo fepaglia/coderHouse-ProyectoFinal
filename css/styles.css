@@ -174,17 +174,19 @@ body{
         }
 /* ### the place ###*/
     .the-place-wineroom-grid { 
-        padding: 1.5em; 
+        padding: 1em 5em; 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 8rem 8rem 8rem 8rem 8rem ;
         grid-auto-rows: 1fr;
         gap: 0.8em;
         grid-auto-flow: row;
         grid-template-areas:
           "cava2 cava2 text1 text1"
           "cava2 cava2 text2 text2"
-          "corcho cava1 . .";
+          "corcho cava1 pic1 pic1"
+          "t1 t1 pic1 pic1"
+          "t2 t2 pic2 pic3";
       }
       
       .corcho { grid-area: corcho; }
@@ -198,20 +200,6 @@ body{
       .text3 { grid-area: text3; }
       
       .text2 { grid-area: text2; }
-    
-      .the-place-grid2 {
-        padding: 1.5em;  
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-auto-rows: 1fr;
-        gap: 0.8em;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "t1 t1 pic1 pic1"
-          "t2 t2 pic1 pic1"
-          ". . pic2 pic3";
-      }
       
       .t1 { grid-area: t1; }
       
@@ -232,16 +220,16 @@ body{
         place-content: center;
     }
       .ptheplace, .preview {
-        font-size: 30px;
-        padding: 1em;
+        font-size: 1.3vw;
+        padding: .5em;
         margin: auto;
       }
 
 /*#### menu.html ####*/
-
-        /*box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
-        padding: 5px;
-        margin: 1em;*/
+      .main-menu{
+        background-color: brown;
+        object-fit: cover;
+      }
 
 /*##### aboutus.html #####*/
 
@@ -292,7 +280,7 @@ body{
     }
 
 /*##### Media Queries ########*/
-@media (max-width: 660px){
+@media (max-width: 800px){
     header, footer, .box{
         flex-direction: column;
     }
@@ -335,6 +323,15 @@ body{
         "four four";
     }
 
+    .the-place-wineroom-grid{
+        padding: 1em;
+
+        grid-template-rows: auto;
+    }
+        .ptheplace {
+            font-size: 2.5vw;
+        }
+
     .footer__agencies, .footer__info-contact, .footer__sociallogos {
         border: 1px solid black;
     }
@@ -347,10 +344,6 @@ body{
     }
     .img-theplace{
         width:100px;
-    }
-
-    .ptheplace, .preview {
-        font-size: 25px;
     }
 
     .imgbox{
@@ -415,30 +408,24 @@ body{
         }
         /*MAIN THE PLACE*/
     .the-place-wineroom-grid{
+        padding: 1em;
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         gap: .4em;
         grid-template-areas:
         "cava2"
         "text1"
         "cava1"
         "text2"
-        "corcho";
-        }
-
-        .ptheplace {
-            font-size: 20px;
-        }
-
-    .the-place-grid2 {
-        height: auto;
-        grid-auto-rows: auto;
-        grid-template-columns: 1fr;
-        gap: 0.4em;
-        grid-template-areas:
+        "corcho"
         "pic1"
         "t1"
         "pic2"
         "t2" 
         "pic3";
-    }
+        }
+
+        .ptheplace {
+            font-size: 5.5vw;
+        }
 }
