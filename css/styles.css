@@ -10,6 +10,7 @@ body{
 /* ##### index ####*/
     .navbar {
         background-color: #EF8354;
+        padding: 4px;
     }
         .navbar-toggler {
             background-color: #d17c36;
@@ -21,6 +22,7 @@ body{
                 text-decoration: none;
                 color: black;
                 font-size: 30px;
+                padding: 4px 8px;
             }
 /* ANIMACION*/  #nav-text:hover {
                     text-decoration: underline;
@@ -174,10 +176,10 @@ body{
         }
 /* ### the place ###*/
     .the-place-wineroom-grid { 
-        padding: 1em 5em; 
+        padding: 0.2em 5em 1em 5em; 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 8rem 8rem 8rem 8rem 8rem ;
+        grid-template-rows: 7rem 7rem 7rem 7rem 7rem ;
         grid-auto-rows: 1fr;
         gap: 0.8em;
         grid-auto-flow: row;
@@ -220,7 +222,7 @@ body{
         place-content: center;
     }
       .ptheplace, .preview {
-        font-size: 1.3vw;
+        font-size: 1.2vw;
         padding: .5em;
         margin: auto;
       }
@@ -228,8 +230,14 @@ body{
 /*#### menu.html ####*/
       .main-menu{
         background-color: brown;
-        object-fit: cover;
       }
+
+        .card-img-top {
+            height: 200px;
+            min-height: 250px;
+            object-fit: cover;
+        }
+
 
 /*##### aboutus.html #####*/
 
