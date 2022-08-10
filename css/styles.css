@@ -96,57 +96,27 @@ body{
             object-fit: cover;
         }
 
-    .comments{
-        min-height: 70vh;
-        max-height: 70%;
-        padding: 3em;
-
-        display: grid;
-        gap: .8em;
-        grid-auto-columns: 1fr;
-        grid-template-areas:
-        "one one two five"
-        "three four four five";
-        }
-        .review {
-            background-color: gray;
-            height: 100%;
-            width:100%;
-
+/* CARROUSEL */
+        .wrapper {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            flex-direction: auto;
+            place-content: center;
         }
 
-        .rev1 {
-            grid-area: one;
-            background-color: #EF8354;
-        }
-        .rev2 {
-            grid-area: two;
-            background-color: #FF9479;
-        }
-        .rev3 {
-            grid-area: three;
-            background-color: #B78570;
-        }
-        .rev4 {
-            grid-area: four;
-            background-color:  #DC6976;
-        }
-        .rev5 {
-            grid-area: five;
-            background-color: #B45794;
-        }
-
-            .reviewimg {
-                border-radius: 50%;
-                margin: .3em .2em;
-                object-fit: cover;
+            .card-carousel {
+                border: none;
+                box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
             }
 
+            .carousel-control-prev , .carousel-control-next {
+                background-color: #d1aeb3;
+                width: 6vh;
+                height: 6vh;
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+
+            }
+         
         .footer__agencies, .footer__info-contact, .footer__sociallogos {
             padding:0.4em;
             text-align: center;
@@ -174,12 +144,14 @@ body{
             color: white;
             font-size: 30px;
         }
+
+    
 /* ### the place ###*/
     .the-place-wineroom-grid { 
         padding: 0.2em 5em 1em 5em; 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 7rem 7rem 7rem 7rem 7rem ;
+        grid-template-rows: 10rem 7rem 7rem 7rem 7rem ;
         grid-auto-rows: 1fr;
         gap: 0.8em;
         grid-auto-flow: row;
@@ -323,12 +295,9 @@ body{
         "seis seis"; 
     }
 
-    .comments {
-        grid-template-areas:
-        "one one"
-        "two three"
-        "five five"
-        "four four";
+    .card-carousel:not(:first-child) {
+        display: none;
+
     }
 
     .the-place-wineroom-grid{
@@ -397,23 +366,6 @@ body{
         "seis";
         overflow: scroll;
     }
-
-    .comments {
-        padding:.5em;
-        grid-auto-columns: 100%;
-        grid-template-areas:
-        'one'
-        'two'
-        'three'
-        'four'
-        'five';
-        width: 100%;
-    
-    }
-        .review, .preview {
-            flex-direction: column;
-            padding: .4em;
-        }
         /*MAIN THE PLACE*/
     .the-place-wineroom-grid{
         padding: 1em;
