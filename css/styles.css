@@ -212,41 +212,17 @@ body{
 
 
 /*##### aboutus.html #####*/
-
-    .aboutus {
-        min-height: 90vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: 
-        ". title ."
-        "box1 box1 box1"
-        "box2 . box3";
-    }
-        .gridtitle {
-            grid-area: title;
+        .aboutus-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
-        .box1 {
-            grid-area: box1;
+        .aboutus-flex {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
-        .box2 {
-            grid-area: box2;
-        }
-        .box3 {
-            grid-area: box3 ;
-        }
-
-        .img-aboutus {
-            box-shadow: .35em .35em .48em;
-            border-radius: 5px;
-            margin-right:1em;
-            width: 600px;
-        }
-        .img-chef{
-            width: 30%;
-            height: 25%;
-            object-fit: cover;      
-        }
+  
 
 /*### contact ###*/ 
 .contact{
@@ -258,6 +234,17 @@ body{
         border-radius: 4px;
         padding: 1rem;
     }
+
+/* FOOTER */
+    .footer {
+        display: flex;
+        place-content: center;
+        flex-wrap: wrap;
+
+        background-color: #ef8354;
+
+    }
+
 
 /*##### Media Queries ########*/
 @media (max-width: 800px){
