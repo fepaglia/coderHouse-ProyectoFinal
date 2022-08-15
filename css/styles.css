@@ -1,3 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IM Fell English SC", serif;
+}
+
 .navbar {
   background-color: #EF8354;
   padding: 4px;
@@ -32,13 +42,11 @@
   flex-wrap: wrap;
   background-color: #ef8354;
 }
-
-.footer__agencies, .footer__info-contact, .footer__sociallogos {
+.footer .footer__agencies, .footer .footer__info-contact, .footer .footer__sociallogos {
   padding: 0.4em;
   text-align: center;
 }
-
-.footer__sociallogos, .footer__agencies {
+.footer .footer__sociallogos, .footer .footer__agencies {
   padding: 0.5em;
 }
 
@@ -71,19 +79,16 @@
   height: 90vh;
   display: flex;
 }
-
-.frontpagediv {
+.frontpage .frontpagediv {
   text-align: center;
   font-size: 2rem;
   color: whitesmoke;
   margin: auto;
 }
-
-h1 {
+.frontpage .frontpagediv h1 {
   font-size: 4em;
 }
-
-.logotripadvisor {
+.frontpage .frontpagediv .logotripadvisor {
   margin-top: 0.5em;
   width: auto;
   max-width: 300px;
@@ -91,10 +96,6 @@ h1 {
 
 main {
   background-color: brown;
-}
-
-article {
-  background-color: #FFECE8;
 }
 
 .gallery {
@@ -141,18 +142,19 @@ article {
      object-fit: cover;
 }
 
-/* CARROUSEL */
-.wrapper {
+article {
+  background-color: #FFECE8;
+  /* CARROUSEL */
+}
+article .wrapper {
   display: flex;
   place-content: center;
 }
-
-.card-carousel {
+article .card-carousel {
   border: none;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
 }
-
-.carousel-control-prev, .carousel-control-next {
+article .carousel-control-prev, article .carousel-control-next {
   background-color: #d1aeb3;
   width: 6vh;
   height: 6vh;
@@ -225,8 +227,7 @@ article {
   display: flex;
   place-content: center;
 }
-
-.ptheplace, .preview {
+.box .ptheplace {
   font-size: 1.2vw;
   padding: 0.5em;
   margin: auto;
@@ -367,13 +368,4 @@ input, select {
   .ptheplace {
     font-size: 5.5vw;
   }
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "IM Fell English SC", serif;
 }/*# sourceMappingURL=styles.css.map */

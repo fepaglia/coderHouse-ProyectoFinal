@@ -6,14 +6,15 @@
 
     background-color: #ef8354;
 
+    .footer__agencies, .footer__info-contact, .footer__sociallogos {
+        padding:0.4em;
+        text-align: center;
+    }
+    .footer__sociallogos , .footer__agencies {
+        padding: .5em
+    }
 }
-.footer__agencies, .footer__info-contact, .footer__sociallogos {
-    padding:0.4em;
-    text-align: center;
-}
-.footer__sociallogos , .footer__agencies {
-    padding: .5em
-}
+
 .link-footer {
     margin: 0.3em;
 }

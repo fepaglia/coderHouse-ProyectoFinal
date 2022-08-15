@@ -44,11 +44,12 @@
 .box {
     display: flex;
     place-content: center;
-}
-  .ptheplace, .preview {
-    font-size: 1.2vw;
-    padding: .5em;
-    margin: auto;
-  }
 
+    .ptheplace {
+      font-size: 1.2vw;
+      padding: .5em;
+      margin: auto;
+    }  
+}
+ 
 

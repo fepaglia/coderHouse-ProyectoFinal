@@ -3,13 +3,13 @@
     object-fit: cover;
     height: 90vh;
     display: flex;
-}
+
     .frontpagediv {
         text-align: center;
         font-size: 2rem;
         color: whitesmoke;
         margin: auto;
-    }
+
         h1 {
             font-size: 4em;
         }
@@ -18,13 +18,13 @@
             width: auto;
             max-width: 300px;       
         }
+    }
+}
+    
+        
 main {
     background-color: brown;
 }
-article{
-    background-color: #FFECE8;
-}
-
 .gallery {
     padding: 3em;
     height: 100vh;
@@ -64,7 +64,9 @@ article{
         object-fit: cover;
     }
 
-/* CARROUSEL */
+article{
+    background-color: #FFECE8;
+    /* CARROUSEL */
     .wrapper {
         display: flex;
         place-content: center;
@@ -74,7 +76,6 @@ article{
             border: none;
             box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
         }
-
         .carousel-control-prev , .carousel-control-next {
             background-color: #d1aeb3;
             width: 6vh;
@@ -82,5 +83,7 @@ article{
             border-radius: 50%;
             top: 50%;
             transform: translateY(-50%);
-
         }
+}
+
+
