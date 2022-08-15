@@ -1,0 +1,131 @@
+@media (max-width: 700px){
+    .header, .footer, .box{
+        flex-direction: column;
+    }
+    
+    nav {
+        padding: 10px 0;
+    }
+        li {
+            padding: 0 5px;
+        }
+
+    section {
+        height: auto;
+        padding-bottom: 1em;
+    }
+
+    .frontpagediv {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 75px;
+    }
+
+    .gallery {
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "uno uno"
+        "uno uno"
+        "dos tres"
+        "cuatro cinco"
+        "seis seis"
+        "seis seis"; 
+    }
+
+    .card-carousel:not(:first-child) {
+        display: none;
+    }
+
+    .the-place-wineroom-grid{
+        padding: 1em;
+        grid-template-rows: auto;
+    }
+        .ptheplace {
+            font-size: 2.5vw;
+        }
+
+    .footer__agencies, .footer__info-contact, .footer__sociallogos {
+        border: 1px solid black;
+    }
+
+    .box {
+        margin: 0.5em;
+    }
+    .description{
+        overflow: hidden;
+    }
+    .img-theplace{
+        width:100px;
+    }
+
+    .imgbox{
+        flex-direction: column;
+    }
+    .img-menu {
+        width: 40%;
+        height: 25%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 572px){
+    .header {
+        flex-direction: row;
+    }
+    .footer, .box{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        padding: 10px 0;
+    }
+        ul {
+            flex-direction: column;
+            padding: 0;
+        }
+        h1 {
+            font-size: 75px;
+        }
+        h2 {
+            font-size: 23px;
+        }
+
+    .gallery {
+        padding:.5em;
+        grid-auto-rows: 20rem;
+        grid-template-columns: 100%;
+        gap: .4em;
+        grid-template-areas:
+        "uno"
+        "dos" 
+        "tres"
+        "cuatro"
+        "cinco"
+        "seis";
+        overflow: scroll;
+    }
+        /*MAIN THE PLACE*/
+    .the-place-wineroom-grid{
+        padding: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: .4em;
+        grid-template-areas:
+        "cava2"
+        "text1"
+        "cava1"
+        "text2"
+        "corcho"
+        "pic1"
+        "t1"
+        "pic2"
+        "t2" 
+        "pic3";
+        }
+
+        .ptheplace {
+            font-size: 5.5vw;
+        }
+}

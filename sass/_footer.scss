@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    background-color: #ef8354;
+
+}
+.footer__agencies, .footer__info-contact, .footer__sociallogos {
+    padding:0.4em;
+    text-align: center;
+}
+.footer__sociallogos , .footer__agencies {
+    padding: .5em
+}
+.link-footer {
+    margin: 0.3em;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin: .5em;
+}
+
+.logo:hover{
+    text-decoration: underline;
+    text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0,0,0,0.15);
+}
+.subtitle {
+    padding-top: .5em;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}

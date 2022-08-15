@@ -1,0 +1,21 @@
+.navbar {
+    background-color: #EF8354;
+    padding: 4px;
+}
+    .navbar-toggler {
+        background-color: #d17c36;
+    }
+        .navbar-toggler-icon {
+            background: #d17c36;
+        }
+        #nav-text {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            padding: 4px 8px;
+        }
+/* ANIMACION*/  #nav-text:hover {
+                text-decoration: underline;
+                color: black;
+                text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0,0,0,0.15);
+            }
