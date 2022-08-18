@@ -3,25 +3,20 @@
     object-fit: cover;
     height: 90vh;
     display: flex;
-
     .frontpagediv {
         text-align: center;
-        font-size: 2rem;
         color: whitesmoke;
         margin: auto;
-
-        h1 {
-            font-size: 4em;
+        .front-text {
+            font-size: 8em;
         }
-        .logotripadvisor {
+        img{
             margin-top: 0.5em;
             width: auto;
             max-width: 300px;       
         }
     }
-}
-    
-        
+}       
 main {
     background-color: brown;
 }
@@ -66,6 +61,7 @@ main {
 
 article{
     background-color: #FFECE8;
+    height: 50rem;
     /* CARROUSEL */
     .wrapper {
         display: flex;

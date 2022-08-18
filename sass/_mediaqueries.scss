@@ -16,12 +16,10 @@
     }
 
     .frontpagediv {
-        font-size: 18px;
+        h1 {
+            font-size: 4em;
+        }
     }
-    h1 {
-        font-size: 75px;
-    }
-
     .gallery {
         height: auto;
         grid-template-columns: 1fr 1fr;
@@ -33,6 +31,8 @@
         "seis seis"
         "seis seis"; 
     }
+
+    
 
     .card-carousel:not(:first-child) {
         display: none;
@@ -47,7 +47,7 @@
         }
 
     .footer__agencies, .footer__info-contact, .footer__sociallogos {
-        border: 1px solid black;
+        border-bottom: 2px solid black;
     }
 
     .box {
@@ -85,12 +85,14 @@
             flex-direction: column;
             padding: 0;
         }
+    .frontpagediv {
         h1 {
-            font-size: 75px;
+            font-size: 3em;
         }
         h2 {
-            font-size: 23px;
+            font-size: 18px;
         }
+    }
 
     .gallery {
         padding:.5em;

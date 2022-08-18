@@ -81,14 +81,13 @@ body {
 }
 .frontpage .frontpagediv {
   text-align: center;
-  font-size: 2rem;
   color: whitesmoke;
   margin: auto;
 }
-.frontpage .frontpagediv h1 {
-  font-size: 4em;
+.frontpage .frontpagediv .front-text {
+  font-size: 8em;
 }
-.frontpage .frontpagediv .logotripadvisor {
+.frontpage .frontpagediv img {
   margin-top: 0.5em;
   width: auto;
   max-width: 300px;
@@ -144,6 +143,7 @@ main {
 
 article {
   background-color: #FFECE8;
+  height: 50rem;
   /* CARROUSEL */
 }
 article .wrapper {
@@ -285,11 +285,8 @@ input, select {
     height: auto;
     padding-bottom: 1em;
   }
-  .frontpagediv {
-    font-size: 18px;
-  }
-  h1 {
-    font-size: 75px;
+  .frontpagediv h1 {
+    font-size: 4em;
   }
   .gallery {
     height: auto;
@@ -307,7 +304,7 @@ input, select {
     font-size: 2.5vw;
   }
   .footer__agencies, .footer__info-contact, .footer__sociallogos {
-    border: 1px solid black;
+    border-bottom: 2px solid black;
   }
   .box {
     margin: 0.5em;
@@ -343,11 +340,11 @@ input, select {
     flex-direction: column;
     padding: 0;
   }
-  h1 {
-    font-size: 75px;
+  .frontpagediv h1 {
+    font-size: 3em;
   }
-  h2 {
-    font-size: 23px;
+  .frontpagediv h2 {
+    font-size: 18px;
   }
   .gallery {
     padding: 0.5em;
