@@ -37,7 +37,7 @@ body {
 
 .footer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: #ef8354;
@@ -76,7 +76,7 @@ body {
   background-image: url(../images/index/fondomenu.jpg);
   -o-object-fit: cover;
      object-fit: cover;
-  height: 90vh;
+  height: 93vh;
   display: flex;
 }
 .frontpage .frontpagediv {
@@ -143,12 +143,15 @@ main {
 
 article {
   background-color: #FFECE8;
-  height: 50rem;
+  padding: 3rem 1rem;
+  height: 45rem;
   /* CARROUSEL */
 }
 article .wrapper {
   display: flex;
-  place-content: center;
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
 }
 article .card-carousel {
   border: none;
@@ -271,7 +274,7 @@ input, select {
   padding: 1rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 718px) {
   .header, .footer, .box {
     flex-direction: column;
   }
@@ -292,6 +295,10 @@ input, select {
     height: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "uno uno" "uno uno" "dos tres" "cuatro cinco" "seis seis" "seis seis";
+  }
+  article {
+    padding: 2rem 1rem;
+    height: 40rem;
   }
   .card-carousel:not(:first-child) {
     display: none;
@@ -353,6 +360,12 @@ input, select {
     gap: 0.4em;
     grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis";
     overflow: scroll;
+  }
+  article {
+    padding: 2rem 1rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   /*MAIN THE PLACE*/
   .the-place-wineroom-grid {
