@@ -1,3 +1,8 @@
+@media (max-width: 1050px) {
+    .the-place-wineroom-grid {
+        grid-template-rows: 15rem 10rem 9rem 12rem 10rem ;
+    }
+}
 @media (max-width: 718px){
     .header, .footer, .box{
         flex-direction: column;
@@ -124,7 +129,7 @@
     .the-place-wineroom-grid{
         padding: 1em;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: repeat(auto-fill, 250px);
         gap: .4em;
         grid-template-areas:
         "cava2"
@@ -143,10 +148,8 @@
         }
 
     .ptheplace {
-        font-size: 14px;
+        font-size: 23px;
         padding: .1em .2em;
-        margin: 0;
     
     }
-
 }

@@ -171,7 +171,7 @@ article .carousel-control-prev, article .carousel-control-next {
   padding: 0.2em 2em 1em 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10rem 7rem 7rem 7rem 7rem;
+  grid-template-rows: 11rem 8rem 8rem 8rem 8rem;
   grid-auto-rows: 1fr;
   gap: 0.8em;
   grid-auto-flow: row;
@@ -224,13 +224,12 @@ article .carousel-control-prev, article .carousel-control-next {
 
 .box {
   background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.box {
-  display: flex;
-  place-content: center;
-}
-.box .ptheplace {
+.ptheplace {
   font-size: 20px;
   text-align: center;
 }
@@ -273,6 +272,11 @@ input, select {
   padding: 1rem;
 }
 
+@media (max-width: 1050px) {
+  .the-place-wineroom-grid {
+    grid-template-rows: 15rem 10rem 9rem 12rem 10rem;
+  }
+}
 @media (max-width: 718px) {
   .header, .footer, .box {
     flex-direction: column;
@@ -370,7 +374,7 @@ input, select {
   .the-place-wineroom-grid {
     padding: 1em;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: repeat(auto-fill, 250px);
     gap: 0.4em;
     grid-template-areas: "cava2" "text1" "cava1" "text2" "pic1" "t1" "pic2" "t2" "pic3";
   }
@@ -378,8 +382,7 @@ input, select {
     display: none;
   }
   .ptheplace {
-    font-size: 14px;
+    font-size: 23px;
     padding: 0.1em 0.2em;
-    margin: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -3,7 +3,7 @@
     padding: 0.2em 2em 1em 2em; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10rem 7rem 7rem 7rem 7rem ;
+    grid-template-rows: 11rem 8rem 8rem 8rem 8rem ;
     grid-auto-rows: 1fr;
     gap: 0.8em;
     grid-auto-flow: row;
@@ -37,18 +37,16 @@
   
   .pic1 { grid-area: pic1; }
   
-  .box {
-    background-color: aliceblue;
-  }
-
 .box {
+    background-color: aliceblue;
     display: flex;
-    place-content: center;
+    align-items: center;
+    justify-content: center;
 
-    .ptheplace {
-      font-size: 20px;
-      text-align: center;
-    }  
 }
+.ptheplace {
+  font-size: 20px;
+  text-align: center;
+}  
  
 
