@@ -5,3 +5,5 @@ Para arrancar, nuestro primer paso fue realizar una investigacion sobre restaura
 Optimizacion de IMAGENES:
 -Con la pagina iloveimg.com comprimimos las imagenes optimizando el tiempo de carga. El ahorro en el peso de las img fue de promedio 35%.
 
+-Utilizacion de la etiqueta picture > source y el atributo srcset, para cargar fotos en otros formatos, optimizando asi el ancho de banda para la carga.
+

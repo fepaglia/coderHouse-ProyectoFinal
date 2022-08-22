@@ -168,7 +168,7 @@ article .carousel-control-prev, article .carousel-control-next {
 
 /* ### the place ###*/
 .the-place-wineroom-grid {
-  padding: 0.2em 5em 1em 5em;
+  padding: 0.2em 2em 1em 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 10rem 7rem 7rem 7rem 7rem;
@@ -231,9 +231,8 @@ article .carousel-control-prev, article .carousel-control-next {
   place-content: center;
 }
 .box .ptheplace {
-  font-size: 1.2vw;
-  padding: 0.5em;
-  margin: auto;
+  font-size: 20px;
+  text-align: center;
 }
 
 /*##### aboutus.html #####*/
@@ -307,12 +306,6 @@ input, select {
     padding: 1em;
     grid-template-rows: auto;
   }
-  .ptheplace {
-    font-size: 2.5vw;
-  }
-  .footer__agencies, .footer__info-contact, .footer__sociallogos {
-    border-bottom: 2px solid black;
-  }
   .box {
     margin: 0.5em;
   }
@@ -321,6 +314,9 @@ input, select {
   }
   .img-theplace {
     width: 100px;
+  }
+  .ptheplace {
+    font-size: 18px;
   }
   .imgbox {
     flex-direction: column;
@@ -331,14 +327,17 @@ input, select {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__agencies, .footer__info-contact, .footer__sociallogos {
+    border-bottom: 2px solid black;
+  }
 }
 @media (max-width: 572px) {
   .header {
     flex-direction: row;
-  }
-  .footer, .box {
-    flex-direction: column;
-    align-items: center;
   }
   nav {
     padding: 10px 0;
@@ -373,9 +372,14 @@ input, select {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 0.4em;
-    grid-template-areas: "cava2" "text1" "cava1" "text2" "corcho" "pic1" "t1" "pic2" "t2" "pic3";
+    grid-template-areas: "cava2" "text1" "cava1" "text2" "pic1" "t1" "pic2" "t2" "pic3";
+  }
+  .corcho {
+    display: none;
   }
   .ptheplace {
-    font-size: 5.5vw;
+    font-size: 14px;
+    padding: 0.1em 0.2em;
+    margin: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

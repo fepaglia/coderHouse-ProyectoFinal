@@ -1,6 +1,6 @@
 /* ### the place ###*/
 .the-place-wineroom-grid { 
-    padding: 0.2em 5em 1em 5em; 
+    padding: 0.2em 2em 1em 2em; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 10rem 7rem 7rem 7rem 7rem ;
@@ -46,9 +46,8 @@
     place-content: center;
 
     .ptheplace {
-      font-size: 1.2vw;
-      padding: .5em;
-      margin: auto;
+      font-size: 20px;
+      text-align: center;
     }  
 }
  

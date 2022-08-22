@@ -47,13 +47,6 @@
         padding: 1em;
         grid-template-rows: auto;
     }
-        .ptheplace {
-            font-size: 2.5vw;
-        }
-
-    .footer__agencies, .footer__info-contact, .footer__sociallogos {
-        border-bottom: 2px solid black;
-    }
 
     .box {
         margin: 0.5em;
@@ -64,6 +57,10 @@
     .img-theplace{
         width:100px;
     }
+    .ptheplace {
+        font-size: 18px;
+
+    }
 
     .imgbox{
         flex-direction: column;
@@ -73,15 +70,20 @@
         height: 25%;
         object-fit: cover;
     }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer__agencies, .footer__info-contact, .footer__sociallogos {
+        border-bottom: 2px solid black;
+    }
 }
 
 @media (max-width: 572px){
     .header {
         flex-direction: row;
-    }
-    .footer, .box{
-        flex-direction: column;
-        align-items: center;
     }
     nav {
         padding: 10px 0;
@@ -129,7 +131,6 @@
         "text1"
         "cava1"
         "text2"
-        "corcho"
         "pic1"
         "t1"
         "pic2"
@@ -137,9 +138,15 @@
         "pic3";
         }
 
-        .ptheplace {
-            font-size: 5.5vw;
+        .corcho {
+            display: none;
         }
 
+    .ptheplace {
+        font-size: 14px;
+        padding: .1em .2em;
+        margin: 0;
+    
+    }
 
 }
