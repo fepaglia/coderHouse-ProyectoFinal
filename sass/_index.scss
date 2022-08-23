@@ -23,11 +23,9 @@ main {
     background-color: $color-fondo-Imp;
 }
 .gallery {
-    padding: 3em;
-    height: 100vh;
+    padding: 1em 3em 2em 3em;
 
     @include dGrid( repeat(4, auto), 20rem , 0.8em);
-    place-content: center;
     object-fit: cover;
     grid-template-areas:
     "uno cinco tres seis"
@@ -51,6 +49,9 @@ main {
     .img6 {
         grid-area: seis;
     }
+    .grid-text {
+        grid-area: texto;
+    }
 
     .img-gal {    
         width: 100%;
@@ -61,7 +62,6 @@ main {
 article{
     background-color: $color-fondo-Sec;
     padding: 3rem 1rem;
-    height: 45rem;
 
     /* CARROUSEL */
     .wrapper {
