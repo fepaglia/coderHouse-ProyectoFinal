@@ -1,8 +1,13 @@
+/* MIXIN*/
+@mixin dFlex () {
+    display: flex; 
+}
+
 .frontpage{
     background-image: url(../images/index/fondomenu.jpg);
     object-fit: cover;
     height: 93vh;
-    display: flex;
+    @include dFlex();
     .frontpagediv {
         text-align: center;
         color: whitesmoke;
@@ -66,7 +71,7 @@ article{
 
     /* CARROUSEL */
     .wrapper {
-        display: flex;
+        @include dFlex();
         align-items: stretch;
         justify-content: space-evenly;
         padding-bottom:2rem;

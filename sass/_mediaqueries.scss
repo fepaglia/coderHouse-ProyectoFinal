@@ -6,20 +6,17 @@
 @media (max-width: 718px){
     .header, .footer, .box{
         flex-direction: column;
-    }
-    
+    }  
     nav {
         padding: 10px 0;
     }
         li {
             padding: 0 5px;
         }
-
     section {
         height: auto;
         padding-bottom: 1em;
     }
-
     .frontpagediv {
         h1 {
             font-size: 4em;
@@ -34,25 +31,22 @@
         "dos tres"
         "cuatro cinco"
         "seis seis"
+      
         "seis seis"; 
     }
-
+    .card-carousel:not(:first-child) {
+        display: none;
+    }
     article {
         padding: 2rem 1rem;
         height: 40rem;
     }
 
-    
-
-    .card-carousel:not(:first-child) {
-        display: none;
-    }
 
     .the-place-wineroom-grid{
         padding: 1em;
         grid-template-rows: auto;
     }
-
     .box {
         margin: 0.5em;
     }
@@ -64,23 +58,21 @@
     }
     .ptheplace {
         font-size: 18px;
-
     }
-
     .imgbox{
         flex-direction: column;
     }
+
     .img-menu {
         width: 40%;
         height: 25%;
         object-fit: cover;
     }
+
     .footer {
         flex-direction: column;
         align-items: center;
-
     }
-
     .footer__agencies, .footer__info-contact, .footer__sociallogos {
         border-bottom: 2px solid black;
     }
@@ -105,7 +97,6 @@
             font-size: 18px;
         }
     }
-
     .gallery {
         padding:.5em;
         grid-auto-rows: 20rem;
@@ -120,11 +111,11 @@
         "seis";
         overflow: scroll;
     }
-
     article {
         padding: 2rem 1rem;
         height:max-content;
     }
+
         /*MAIN THE PLACE*/
     .the-place-wineroom-grid{
         padding: 1em;
@@ -142,11 +133,9 @@
         "t2" 
         "pic3";
         }
-
         .corcho {
             display: none;
         }
-
     .ptheplace {
         font-size: 23px;
         padding: .1em .2em;

@@ -7,3 +7,17 @@ Optimizacion de IMAGENES:
 
 -Utilizacion de la etiqueta picture > source y el atributo srcset, para cargar fotos en otros formatos, optimizando asi el ancho de banda para la carga.
 
+Uso de Keywords:
+-Palabras claves en todos los documentos html.
+-Agregue las siguientes palabras, que creo que relacionan la tematica del sitio bien. Estan en ingles, porque apuntan al cliente turista mas que nada de America del Norte y Europa:
+"food, typpical food, wine, wine-cellar, argentina, buenos aires, tango show, asado, empanadas, chocotorta, restaurant, food place, best, tripadivisor"
+
+Uso de Open graph y el tag de descripcion:
+-aplicado a cada sitio.
+
+Etiquetas semanticas para mostrar las prioridades del sitio.
+h1 : para el uso de titulos.
+main : para cosas principales.
+section/articles : para informacion secundaria.
+
+
