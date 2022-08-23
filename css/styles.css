@@ -51,7 +51,7 @@ body {
   background-color: #ef8354;
 }
 .footer .footer__agencies, .footer .footer__info-contact, .footer .footer__sociallogos {
-  padding: 0.4em;
+  margin-top: 1.5rem;
   text-align: center;
 }
 .footer .footer__sociallogos, .footer .footer__agencies {
