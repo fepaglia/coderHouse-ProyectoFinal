@@ -35,11 +35,19 @@ body {
   text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+/* VARIABLES*/
+/*COLORES*/
+/*Nav y footer */
+/*fondo de secciones importantes*/
+/*fondo de secciones secundarias*/
+/* MIXINS*/
+/* display FLEX*/
+/* display GRID*/
 .footer {
   display: flex;
-  align-items: flex-start;
+  flex-flow: row wrap;
   justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: flex-start;
   background-color: #ef8354;
 }
 .footer .footer__agencies, .footer .footer__info-contact, .footer .footer__sociallogos {
@@ -72,13 +80,23 @@ body {
   font-size: 30px;
 }
 
-/* MIXIN*/
+/* VARIABLES*/
+/*COLORES*/
+/*Nav y footer */
+/*fondo de secciones importantes*/
+/*fondo de secciones secundarias*/
+/* MIXINS*/
+/* display FLEX*/
+/* display GRID*/
 .frontpage {
   background-image: url(../images/index/fondomenu.jpg);
   -o-object-fit: cover;
      object-fit: cover;
   height: 93vh;
   display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 .frontpage .frontpagediv {
   text-align: center;
@@ -102,12 +120,12 @@ main {
   padding: 3em;
   height: 100vh;
   display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-auto-rows: 20rem;
+  gap: 0.8em;
   place-content: center;
   -o-object-fit: cover;
      object-fit: cover;
-  grid-template-columns: auto auto auto auto;
-  grid-auto-rows: 20rem;
-  gap: 0.8em;
   grid-template-areas: "uno cinco tres seis" "uno dos cuatro seis";
 }
 
@@ -150,8 +168,9 @@ article {
 }
 article .wrapper {
   display: flex;
-  align-items: stretch;
+  flex-flow: row nowrap;
   justify-content: space-evenly;
+  align-items: stretch;
   padding-bottom: 2rem;
 }
 article .card-carousel {
@@ -167,14 +186,22 @@ article .carousel-control-prev, article .carousel-control-next {
   transform: translateY(-50%);
 }
 
+/* VARIABLES*/
+/*COLORES*/
+/*Nav y footer */
+/*fondo de secciones importantes*/
+/*fondo de secciones secundarias*/
+/* MIXINS*/
+/* display FLEX*/
+/* display GRID*/
 /* ### the place ###*/
 .the-place-wineroom-grid {
-  padding: 0.2em 2em 1em 2em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 11rem 8rem 8rem 8rem 8rem;
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 1fr;
   gap: 0.8em;
+  padding: 0.2em 2em 1em 2em;
+  grid-template-rows: 11rem 8rem 8rem 8rem 8rem;
   grid-auto-flow: row;
   grid-template-areas: "cava2 cava2 text1 text1" "cava2 cava2 text2 text2" "corcho cava1 pic1 pic1" "t1 t1 pic1 pic1" "t2 t2 pic2 pic3";
 }
@@ -226,8 +253,9 @@ article .carousel-control-prev, article .carousel-control-next {
 .box {
   background-color: aliceblue;
   display: flex;
-  align-items: center;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
 }
 
 .ptheplace {
@@ -235,6 +263,14 @@ article .carousel-control-prev, article .carousel-control-next {
   text-align: center;
 }
 
+/* VARIABLES*/
+/*COLORES*/
+/*Nav y footer */
+/*fondo de secciones importantes*/
+/*fondo de secciones secundarias*/
+/* MIXINS*/
+/* display FLEX*/
+/* display GRID*/
 /*##### aboutus.html #####*/
 .aboutus-img {
   height: 100%;
@@ -245,8 +281,9 @@ article .carousel-control-prev, article .carousel-control-next {
 
 .aboutus-flex {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 /*#### menu.html ####*/

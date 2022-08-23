@@ -1,3 +1,5 @@
+@import "variablesMixins";
+
 /*##### aboutus.html #####*/
 .aboutus-img {
     height: 100%;
@@ -5,7 +7,5 @@
     object-fit: cover;
 }
 .aboutus-flex {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    @include dFlex (flex , row , wrap , space-around, center);
 }

@@ -1,13 +1,10 @@
-/* MIXIN*/
-@mixin dFlex () {
-    display: flex; 
-}
+@import "variablesMixins";
 
 .frontpage{
     background-image: url(../images/index/fondomenu.jpg);
     object-fit: cover;
     height: 93vh;
-    @include dFlex();
+    @include dFlex(flex , column, nowrap, center, center);
     .frontpagediv {
         text-align: center;
         color: whitesmoke;
@@ -23,18 +20,15 @@
     }
 }       
 main {
-    background-color: brown;
+    background-color: $color-fondo-Imp;
 }
 .gallery {
     padding: 3em;
     height: 100vh;
 
-    display: grid;
+    @include dGrid( repeat(4, auto), 20rem , 0.8em);
     place-content: center;
     object-fit: cover;
-    grid-template-columns: auto auto auto auto;
-    grid-auto-rows: 20rem;
-    gap: .8em;
     grid-template-areas:
     "uno cinco tres seis"
     "uno dos cuatro seis";
@@ -65,15 +59,13 @@ main {
     }
 
 article{
-    background-color: #FFECE8;
+    background-color: $color-fondo-Sec;
     padding: 3rem 1rem;
     height: 45rem;
 
     /* CARROUSEL */
     .wrapper {
-        @include dFlex();
-        align-items: stretch;
-        justify-content: space-evenly;
+        @include dFlex(flex , row, nowrap, space-evenly, stretch);
         padding-bottom:2rem;
     }
 

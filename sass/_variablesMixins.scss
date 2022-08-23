@@ -1,0 +1,26 @@
+/* VARIABLES*/ 
+
+/*COLORES*/
+    /*Nav y footer */
+$color-n-f: #ef8354;
+    /*fondo de secciones importantes*/
+$color-fondo-Imp: brown;
+    /*fondo de secciones secundarias*/
+$color-fondo-Sec: #FFECE8;
+
+/* MIXINS*/
+/* display FLEX*/
+@mixin dFlex ($dis , $direction , $corte , $just , $align ) {
+    display: $dis ;
+    flex-flow: $direction $corte;
+    justify-content: $just;
+    align-items: $align  ;
+}
+ /* display GRID*/
+@mixin dGrid ($col , $rowAuto , $gap) {
+    display: grid ;
+    grid-template-columns: $col;
+    grid-auto-rows: $rowAuto;
+    gap: $gap;
+}
+

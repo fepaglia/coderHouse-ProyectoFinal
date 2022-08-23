@@ -1,10 +1,8 @@
-.footer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-wrap: wrap;
+@import "variablesMixins";
 
-    background-color: #ef8354;
+.footer {
+    @include dFlex (flex , row , wrap , space-around , flex-start);
+    background-color: $color-n-f;
 
     .footer__agencies, .footer__info-contact, .footer__sociallogos {
         padding:0.4em;
