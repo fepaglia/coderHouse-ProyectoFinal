@@ -1,3 +1,7 @@
+@import "variablesMixins";
+
+/*## Mediaqueries ##*/
+
 @media (max-width: 1050px) {
     .the-place-wineroom-grid {
         grid-template-rows: 15rem 10rem 9rem 12rem 10rem ;
@@ -98,10 +102,7 @@
         }
     }
     .gallery {
-        padding:.5em;
-        grid-auto-rows: 20rem;
-        grid-template-columns: 100%;
-        gap: .4em;
+        @include dGrid (100%, 20rem , .4em , .5em );
         grid-template-areas:
         "uno"
         "dos" 
@@ -109,7 +110,6 @@
         "cuatro"
         "cinco"
         "seis";
-        overflow: scroll;
     }
     article {
         padding: 2rem 1rem;
@@ -118,10 +118,7 @@
 
         /*MAIN THE PLACE*/
     .the-place-wineroom-grid{
-        padding: 1em;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(auto-fill, 250px);
-        gap: .4em;
+        @include dGrid (1fr ,repeat(auto-fill, 250px) , .4em, 1em);
         grid-template-areas:
         "cava2"
         "text1"

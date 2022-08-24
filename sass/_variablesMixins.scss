@@ -3,6 +3,8 @@
 /*COLORES*/
     /*Nav y footer */
 $color-n-f: #ef8354;
+/* Nav color secundario*/
+$color-n-sec: #d17c36;
     /*fondo de secciones importantes*/
 $color-fondo-Imp: brown;
     /*fondo de secciones secundarias*/
@@ -17,10 +19,11 @@ $color-fondo-Sec: #FFECE8;
     align-items: $align  ;
 }
  /* display GRID*/
-@mixin dGrid ($col , $rowAuto , $gap) {
+@mixin dGrid ($col , $rowAuto , $gap, $padding) {
     display: grid ;
     grid-template-columns: $col;
     grid-auto-rows: $rowAuto;
     gap: $gap;
+    padding: $padding;
 }
 

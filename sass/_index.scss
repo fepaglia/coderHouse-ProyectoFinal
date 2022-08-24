@@ -23,9 +23,7 @@ main {
     background-color: $color-fondo-Imp;
 }
 .gallery {
-    padding: 1em 3em 2em 3em;
-
-    @include dGrid( repeat(4, auto), 20rem , 0.8em);
+    @include dGrid( repeat(4, auto), 20rem , 0.8em, 1em 3em 2em 3em );
     object-fit: cover;
     grid-template-areas:
     "uno cinco tres seis"
@@ -63,7 +61,7 @@ article{
     background-color: $color-fondo-Sec;
     padding: 3rem 1rem;
 
-    /* CARROUSEL */
+    /* CAROUSEL */
     .wrapper {
         @include dFlex(flex , row, nowrap, space-evenly, stretch);
         padding-bottom:2rem;

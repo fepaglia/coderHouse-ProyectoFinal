@@ -2,11 +2,8 @@
 
 /* ### the place ###*/
 .the-place-wineroom-grid { 
-  @include dGrid (repeat(4, 1fr), 1fr, 0.8em);
-  
-    padding: 0.2em 2em 1em 2em; 
+  @include dGrid (repeat(4, 1fr), 1fr, 0.8em, 0.2em 2em 1em 2em); 
     grid-template-rows: 11rem 8rem 8rem 8rem 8rem ;
-    grid-auto-rows: 1fr;
     grid-auto-flow: row;
     grid-template-areas:
       "cava2 cava2 text1 text1"
@@ -39,7 +36,7 @@
   .pic1 { grid-area: pic1; }
   
 .box {
-    background-color: aliceblue;
+    background-color: $color-fondo-Sec;
     @include dFlex(flex , row , nowrap , center , center);
 }
 .ptheplace {

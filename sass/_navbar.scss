@@ -1,12 +1,15 @@
+@import "variablesMixins";
+
+/* ### Nav Bar ###*/
 .navbar {
-    background-color: #EF8354; 
+    background-color: $color-n-f; 
     padding: 4px;
 }
     .navbar-toggler {
-        background-color: #d17c36;
+        background-color: $color-n-sec;
     }
         .navbar-toggler-icon {
-            background: #d17c36;
+            background: $color-n-sec;
         }
         #nav-text {
             text-decoration: none;
@@ -17,5 +20,5 @@
 /* ANIMACION*/  #nav-text:hover {
                 text-decoration: underline;
                 color: black;
-                text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0,0,0,0.15);
+                text-shadow: 2px 2px 0px $color-n-sec, 5px 4px 0px rgba(0,0,0,0.15);
             }
