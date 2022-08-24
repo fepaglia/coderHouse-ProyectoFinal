@@ -6,6 +6,11 @@
     .the-place-wineroom-grid {
         grid-template-rows: 15rem 10rem 9rem 12rem 10rem ;
     }
+
+    .aboutus-img {
+        width: 300px;
+        justify-content: center
+    }
 }
 @media (max-width: 718px){
     .header, .footer, .box{
@@ -60,7 +65,7 @@
     .img-theplace{
         width:100px;
     }
-    .ptheplace {
+    .ptheplace , .paboutus {
         font-size: 18px;
     }
     .imgbox{
@@ -72,6 +77,11 @@
         height: 25%;
         object-fit: cover;
     }
+
+    .aboutus-flex    {
+        @include dFlex (flex , column , wrap , space-around, center);
+    }
+
 
     .footer {
         flex-direction: column;
@@ -140,4 +150,10 @@
         padding: .1em .2em;
     
     }
+
+    .paboutus {
+        font-size: 18px;
+    }
+
+
 }

@@ -287,9 +287,12 @@ article .carousel-control-prev, article .carousel-control-next {
 /* display FLEX*/
 /* display GRID*/
 /*##### aboutus.html #####*/
+.paboutus {
+  font-size: 20px;
+  text-align: center;
+}
+
 .aboutus-img {
-  height: 100%;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -339,6 +342,10 @@ input, select {
   .the-place-wineroom-grid {
     grid-template-rows: 15rem 10rem 9rem 12rem 10rem;
   }
+  .aboutus-img {
+    width: 300px;
+    justify-content: center;
+  }
 }
 @media (max-width: 718px) {
   .header, .footer, .box {
@@ -382,7 +389,7 @@ input, select {
   .img-theplace {
     width: 100px;
   }
-  .ptheplace {
+  .ptheplace, .paboutus {
     font-size: 18px;
   }
   .imgbox {
@@ -393,6 +400,12 @@ input, select {
     height: 25%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .aboutus-flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
   }
   .footer {
     flex-direction: column;
@@ -451,5 +464,8 @@ input, select {
   .ptheplace {
     font-size: 23px;
     padding: 0.1em 0.2em;
+  }
+  .paboutus {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=styles.css.map */
