@@ -4,32 +4,33 @@
     @include dFlex (flex , row , wrap , space-around , flex-start);
     background-color: $color-n-f;
 
-    .footer__agencies, .footer__info-contact, .footer__sociallogos {
+    .footer__info-contact, .footer__sociallogos {
         margin-top: 1.5rem;
         text-align: center;
+
+        .link-footer {
+            font-size: 1.5rem;
+            margin: 0.3em;
+            color: $color-fondo-Sec;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+                text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0,0,0,0.15);
+                          
+                
+            }
+             /* LOGO */
+            .bi {
+                font-size: 3rem;
+                color: $color-fondo-Sec;
+                margin-left: 10px;
+                margin-right: 10px;
+                
+                &:hover{
+                    text-decoration: underline;
+                    text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0,0,0,0.15);
+                }
+            }
+        }   
     }
-    .footer__sociallogos , .footer__agencies {
-        padding: .5em
-    }
-}
-
-.link-footer {
-    margin: 0.3em;
-}
-
-.logo {
-    width: 30px;
-    height: 30px;
-    margin: .5em;
-}
-
-.logo:hover{
-    text-decoration: underline;
-    text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0,0,0,0.15);
-}
-.subtitle {
-    padding-top: .5em;
-    text-align: center;
-    color: white;
-    font-size: 30px;
 }

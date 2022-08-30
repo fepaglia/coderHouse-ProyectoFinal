@@ -45,6 +45,14 @@ body {
   text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+/* Titulo de cada pagina*/
+.subtitle {
+  padding-top: 0.5em;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
 /* VARIABLES*/
 /*COLORES*/
 /*Nav y footer */
@@ -61,34 +69,30 @@ body {
   align-items: flex-start;
   background-color: #ef8354;
 }
-.footer .footer__agencies, .footer .footer__info-contact, .footer .footer__sociallogos {
+.footer .footer__info-contact, .footer .footer__sociallogos {
   margin-top: 1.5rem;
   text-align: center;
 }
-.footer .footer__sociallogos, .footer .footer__agencies {
-  padding: 0.5em;
-}
-
-.link-footer {
+.footer .footer__info-contact .link-footer, .footer .footer__sociallogos .link-footer {
+  font-size: 1.5rem;
   margin: 0.3em;
+  color: #FFECE8;
+  text-decoration: none;
+  /* LOGO */
 }
-
-.logo {
-  width: 30px;
-  height: 30px;
-  margin: 0.5em;
-}
-
-.logo:hover {
+.footer .footer__info-contact .link-footer:hover, .footer .footer__sociallogos .link-footer:hover {
   text-decoration: underline;
   text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
-.subtitle {
-  padding-top: 0.5em;
-  text-align: center;
-  color: white;
-  font-size: 30px;
+.footer .footer__info-contact .link-footer .bi, .footer .footer__sociallogos .link-footer .bi {
+  font-size: 3rem;
+  color: #FFECE8;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.footer .footer__info-contact .link-footer .bi:hover, .footer .footer__sociallogos .link-footer .bi:hover {
+  text-decoration: underline;
+  text-shadow: 2px 2px 0px #d17c36, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* VARIABLES*/
@@ -410,6 +414,7 @@ input, select {
   .footer {
     flex-direction: column;
     align-items: center;
+    padding-top: 5px;
   }
   .footer__agencies, .footer__info-contact, .footer__sociallogos {
     border-bottom: 2px solid black;
@@ -467,5 +472,8 @@ input, select {
   }
   .paboutus {
     font-size: 18px;
+  }
+  .footer__agencies, .footer__info-contact, .footer__sociallogos {
+    margin-top: 0.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
